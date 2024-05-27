@@ -1,0 +1,2 @@
+# dotfiles
+Minimalist Sway dotfiles
