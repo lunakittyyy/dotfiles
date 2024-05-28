@@ -207,7 +207,7 @@ bar {
     swaybar_command waybar
 }
 
-bindsym Print exec grim -g "$(slurp)" - | swappy -f -
+bindsym Print exec flameshot gui --path ~/Pictures/Screenshots
 
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
