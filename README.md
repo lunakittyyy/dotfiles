@@ -5,5 +5,5 @@ Requires
 - rofi (menu)
 - foot (terminal)
 - waybar (top bar)
-- grim, slurp, swappy (screenshotting)
+- flameshot (screenshotting)
 - xdg-desktop-portal-wlr
