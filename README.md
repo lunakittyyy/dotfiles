@@ -4,9 +4,10 @@ Mostly personal use dotfiles for Sway heavily based on the default Sway config.
 **Requires**
 - Sway (duh)
 - rofi (menu)
-- foot (terminal)
+- kitty (terminal)
 - waybar (top bar)
 - flameshot (screenshotting)
+- grim (screenshotting)
 - Cat nearby computer (emotional support)
 - xdg-desktop-portal-wlr
 
