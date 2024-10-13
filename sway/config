@@ -14,23 +14,23 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term foot
+set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | rofi -show drun | xargs swaymsg exec --
+set $menu dmenu_path | rofi -m -1 -show drun | xargs swaymsg exec --
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /home/kaylie/Pictures/Wallpapers/cafe.png fill
 #
 # Example configuration:
 #
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
-
+output DVI-D-1 transform 270
 ### Idle configuration
 #
 # Example configuration:
@@ -57,9 +57,9 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
-input "1133:49271:Logitech_USB_Optical_Mouse" {
+input "1133:16500:Logitech_G305" {
 	accel_profile "flat"
-	pointer_accel 1
+	pointer_accel 0.5
 }
 ### Key bindings
 #
@@ -207,6 +207,7 @@ bar {
     swaybar_command waybar
 }
 
+for_window [app_id="flameshot"] border pixel 0, floating enable, fullscreen disable, move absolute position 0 0
 bindsym Print exec flameshot gui --path ~/Pictures/Screenshots
 
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
