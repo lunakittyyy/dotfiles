@@ -14,3 +14,4 @@ Mostly personal use dotfiles for Sway heavily based on the default Sway config.
 **Recommended**
 - mako (notifications)
 - greetd + greetd-tuigreet (lightweight TUI greeter)
+- polkit-kde-agent (Authentication for certain graphical applications)
